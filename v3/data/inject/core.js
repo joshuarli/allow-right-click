@@ -65,7 +65,7 @@ window.pointers.record = (e, name, value) => {
       for (const [e, {name, value}] of window.pointers.cache) {
         e.style[name] = value;
       }
-      window.pointers.cache = new Set();
+      window.pointers.cache = new Map();
     }
   };
 
